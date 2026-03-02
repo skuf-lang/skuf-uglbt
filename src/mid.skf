@@ -1,0 +1,8 @@
+@ai("Logger middleware — logs each request")
+fn logger() -> fn
+
+@ai("CORS middleware — sets Access-Control-Allow-Origin headers")
+fn cors() -> fn
+
+@ai("Rate limiter middleware")
+fn rate_limit(max: int, window: int) -> fn

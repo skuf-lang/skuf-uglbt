@@ -1,0 +1,4 @@
+pkg uglbt 0.3.0
+by skuf-lang
+repo github.com/skuf-lang/skuf-uglbt
+entry src/http.skf

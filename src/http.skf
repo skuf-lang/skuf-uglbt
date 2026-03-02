@@ -1,0 +1,35 @@
+@ai("Create a new HTTP application instance")
+fn app() -> int
+
+@ai("Register a GET route handler")
+fn get(app: int, path: string, handler: fn) -> void
+
+@ai("Register a POST route handler")
+fn post(app: int, path: string, handler: fn) -> void
+
+@ai("Register a PUT route handler")
+fn put(app: int, path: string, handler: fn) -> void
+
+@ai("Register a DELETE route handler")
+fn delete(app: int, path: string, handler: fn) -> void
+
+@ai("Start the HTTP server on the given port (blocking)")
+fn listen(app: int, port: int) -> void
+
+@ai("Stop the HTTP server gracefully")
+fn stop(app: int) -> void
+
+@ai("Create a plain text response")
+fn text(status: int, body: string) -> Response
+
+@ai("Create a JSON response")
+fn json(status: int, data: string) -> Response
+
+@ai("Create a redirect response (302)")
+fn redirect(url: string) -> Response
+
+@ai("Create an error response with JSON body")
+fn error(status: int, msg: string) -> Response
+
+@ai("Extract a named route parameter from the request")
+fn param(req: Request, key: string) -> string
